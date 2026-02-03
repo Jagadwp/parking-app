@@ -1,6 +1,6 @@
 package models
 
-// MinHeap implements a min heap interface.
+// MinHeap implements heap interface.
 // Ensures O(log n) time complexity for insertion & extraction,
 type MinHeap []int
 
