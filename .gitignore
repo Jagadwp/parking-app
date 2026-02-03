@@ -1,0 +1,22 @@
+# Go binaries
+*.exe
+*.exe~
+*.out
+
+# Test binary, build output, and other artifacts
+*.test
+*.out
+
+# Vendor directory
+/vendor/
+
+# Go workspace file
+go.work
+
+# IDE files
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
