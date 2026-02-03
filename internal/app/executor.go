@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"parking-lot/internal/models"
-	"parking-lot/internal/parser"
+	"parking-app/internal/models"
+	"parking-app/internal/parser"
 )
 
 type Executor struct {

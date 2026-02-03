@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"os"
 
-	"parking-lot/internal/app"
-	"parking-lot/internal/parser"
+	"parking-app/internal/app"
+	"parking-app/internal/parser"
 )
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Usage: parking-lot <input_file>")
-		fmt.Println("Example: parking-lot input.txt")
+		fmt.Println("Usage: parking-app <input_file>")
+		fmt.Println("Example: parking-app input.txt")
 		os.Exit(1)
 	}
 
