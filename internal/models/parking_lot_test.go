@@ -1,6 +1,7 @@
 package models
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -129,12 +130,19 @@ func TestCalculateCharge(t *testing.T) {
 	}
 
 	for _, tt := range tests {
-		t.Run("", func(t *testing.T) {
+		t.Run(fmt.Sprintf("%d_hours", tt.hours), func(t *testing.T) {
 			got := calculateCharge(tt.hours)
 			if got != tt.want {
 				t.Errorf("calculateCharge(%d) = %d, want %d", tt.hours, got, tt.want)
 			}
 		})
+	}
+}
+
+func TestZeroHours(t *testing.T) {
+	charge := calculateCharge(0)
+	if charge != 10 {
+		t.Errorf("0 hours should cost $10, got $%d", charge)
 	}
 }
 
